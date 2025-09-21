@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+regex
+chromadb
+sentence-transformers
+fastapi
+uvicorn
+folium
+geopy
+pydantic
