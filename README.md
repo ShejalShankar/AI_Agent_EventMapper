@@ -5,9 +5,13 @@ Event & Meetup Mapper is a full-stack application designed to make discovering l
 
 ## 💡 Workflow
 **Data Collection** – The backend scrapes raw event details such as titles, descriptions, dates, and locations.
+
 **Intelligent Filtering (AI Agent)** – Events are enriched with embeddings (all-MiniLM-L6-v2) and stored in ChromaDB, allowing the system to filter and rank them by how closely they match user interests.
+
 **Geospatial Mapping** – Event addresses are geocoded into coordinates and plotted on an interactive map, with the option to apply commute-distance filters for practicality.
+
 **Backend Services (FastAPI)** – A clean REST API powers the entire pipeline, exposing endpoints for event search, AI-driven filtering, and map generation.
+
 **User Interface (Next.js + React)** – On the frontend, users can search by keyword and location, browse a ranked list of events, and switch to a map view for a spatial perspective.
 
 ## 🛠️ Tech Stack
