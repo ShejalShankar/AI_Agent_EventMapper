@@ -1,22 +1,14 @@
 # Event & Meetup Mapper (RAG + Maps)
 
-## 📌 Project Overview
-Event & Meetup Mapper is a full-stack application that helps users discover the most relevant tech events in their area.  
-Traditional platforms like Meetup or Eventbrite show long lists of events, but they don’t:  
-- Filter results intelligently by your interests.  
-- Show how far events are from you or how easy they are to attend.  
+## 📌 Introduction
+Event & Meetup Mapper is a full-stack application designed to make discovering local tech events smarter and more convenient. This project tackles the problem by combining AI-powered relevance filtering with interactive mapping, helping users quickly find the events that matter most to them and understand how practical it is to attend. It transforms scattered event data into a personalized, location-aware experience.
 
-This project solves that by combining **AI-powered filtering** with **interactive maps**.  
-
-## 💡 How It Works
-1. **Scraping Layer** – Collects raw event data (title, description, date, location) from platforms like Eventbrite and Meetup.  
-2. **AI Agent (RAG)** – Uses sentence embeddings (`all-MiniLM-L6-v2`) and a vector database (ChromaDB) to filter and rank events by relevance to user interests (e.g., AI, ML, Cloud).  
-3. **Mapping Layer** – Converts event addresses into coordinates and plots them on an interactive map, with optional commute-distance filters.  
-4. **Frontend (Next.js + React)** – Provides a clean UI where users can:  
-   - Enter keywords and a location.  
-   - View the most relevant events in a list with dates and links.  
-   - Switch to a map view to see event locations visually.  
-5. **Backend (FastAPI)** – Exposes REST APIs for event search, relevance filtering, and map generation.  
+## 💡 Workflow
+**Data Collection** – The backend scrapes raw event details such as titles, descriptions, dates, and locations.
+**Intelligent Filtering (AI Agent)** – Events are enriched with embeddings (all-MiniLM-L6-v2) and stored in ChromaDB, allowing the system to filter and rank them by how closely they match user interests.
+**Geospatial Mapping** – Event addresses are geocoded into coordinates and plotted on an interactive map, with the option to apply commute-distance filters for practicality.
+**Backend Services (FastAPI)** – A clean REST API powers the entire pipeline, exposing endpoints for event search, AI-driven filtering, and map generation.
+**User Interface (Next.js + React)** – On the frontend, users can search by keyword and location, browse a ranked list of events, and switch to a map view for a spatial perspective.
 
 ## 🛠️ Tech Stack
 - **AI/ML** – SentenceTransformers (`all-MiniLM-L6-v2`), ChromaDB  
@@ -24,7 +16,6 @@ This project solves that by combining **AI-powered filtering** with **interactiv
 - **Scraping** – Requests, BeautifulSoup, Regex  
 - **Mapping** – Folium, Geopy  
 - **Frontend** – Next.js (React + TypeScript), TailwindCSS  
-- **Deployment** – (Planned) Render / Vercel / Hugging Face Spaces  
 
 ## 🎯 Why This Project
 This project demonstrates how to build a practical **AI-powered full-stack application** by combining:  
