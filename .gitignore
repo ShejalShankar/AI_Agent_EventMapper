@@ -1,18 +1,49 @@
-# Python
+# -------------------------
+# Python / FastAPI backend
+# -------------------------
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-
-# Env
-.venv/
+*.so
+*.egg
+*.egg-info/
+*.db
 .env
-event-mapper/
+.venv/
+event-mapper/        # conda env folder if created inside project
 
-# Jupyter
-.ipynb_checkpoints
+# Logs
+*.log
 
-# Data
-data/*.csv
-data/*.json
-data/*.db
+# VSCode
+.vscode/
+*.code-workspace
+
+# -------------------------
+# Node / Next.js frontend
+# -------------------------
+node_modules/
+.npm/
+.next/
+out/
+dist/
+coverage/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# -------------------------
+# OS / Misc
+# -------------------------
+.DS_Store
+Thumbs.db
